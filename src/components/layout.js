@@ -52,8 +52,17 @@ class Template extends React.Component {
               <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
                 <ul className='nav navbar-nav'>
                   <li>
-                    <Link to='/'>
+                    <Link to='/' activeStyle={{
+                      backgroundColor: '#DBE4E6'
+                    }}>
                       Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/about' activeStyle={{
+                      backgroundColor: '#DBE4E6'
+                    }}>
+                      About
                     </Link>
                   </li>
                 </ul>
