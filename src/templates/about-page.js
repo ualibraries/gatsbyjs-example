@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export const AboutPageTemplate = ({ title, content }) => {
   return (
@@ -10,7 +10,7 @@ export const AboutPageTemplate = ({ title, content }) => {
         {title}
       </h2>
       <main>
-        {content}
+        <div dangerouslySetInnerHTML={{__html: content}} />
       </main>
     </div>
   )
@@ -18,8 +18,7 @@ export const AboutPageTemplate = ({ title, content }) => {
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func
+  content: PropTypes.string
 }
 
 const AboutPage = ({ data }) => {

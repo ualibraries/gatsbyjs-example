@@ -9,14 +9,12 @@ class BlogPostTemplate extends React.Component {
   render () {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
 
     return (
       <Layout location={this.props.location}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <h1>{post.frontmatter.title}</h1>
@@ -61,20 +59,15 @@ class BlogPostTemplate extends React.Component {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  query BlogPostByID($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       id
-      excerpt
       html
       frontmatter {
-        title
         date(formatString: "MMMM DD, YYYY")
+        title
+        description
+        tags
       }
     }
   }
