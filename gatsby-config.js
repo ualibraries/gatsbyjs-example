@@ -3,9 +3,8 @@ module.exports = {
     title: '2018 IT Summit Gatsby Example',
     author: 'Christropher Green',
     description: 'An example Gatsby blog for the 2018 IT Summit.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/'
+    siteUrl: 'https://2018-it-summit-gatsby-example.netlify.com'
   },
-  pathPrefix: '/gatsby-starter-blog',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -48,11 +47,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `2018 IT Summit Gatsby Examlpe`,
+        short_name: `Gatsby Example`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#990019`,
         display: `minimal-ui`,
         icon: `src/assets/gatsby-icon.png`
       }
