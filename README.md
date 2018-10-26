@@ -4,7 +4,7 @@ An exmaple Gatsby site for the 2018 IT Summit.
 
 ## Getting started
 
-Run `yarn install`.
+Run `npm install`.
 
-Develop with `yarn run develop` and build with `yarn run build`.
+Develop with `npm run develop` and build with `npm run build`.
 
