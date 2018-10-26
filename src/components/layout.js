@@ -11,6 +11,8 @@ class Template extends React.Component {
         <Helmet>
           <link rel='stylesheet' href='https://cdn.uadigital.arizona.edu/lib/ua-brand-icons/latest/ua-brand-icons.css' />
           <link rel='stylesheet' href='https://cdn.uadigital.arizona.edu/lib/ua-bootstrap/v1.0.0-beta.17/ua-bootstrap.min.css' />
+          <script src='https://code.jquery.com/jquery-2.2.4.min.js' />
+          <script src='https://cdn.uadigital.arizona.edu/lib/ua-bootstrap/v1.0.0-beta.17/ua-bootstrap.min.js' />
         </Helmet>
         <header className='l-arizona-header bg-red' id='region_header_ua'>
           <section className='container l-container'>
@@ -32,7 +34,8 @@ class Template extends React.Component {
               <img
                 src={branding}
                 style={{
-                  maxWidth: '400px',
+                  width: '400px',
+                  maxWidth: '100%',
                   height: 'auto'
                 }}
               />
