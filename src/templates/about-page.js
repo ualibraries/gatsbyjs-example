@@ -6,9 +6,9 @@ import Layout from '../components/layout'
 export const AboutPageTemplate = ({ title, content }) => {
   return (
     <div>
-      <h2 className='title is-size-3 has-text-weight-bold is-bold-light'>
+      <h1>
         {title}
-      </h2>
+      </h1>
       <main>
         <div dangerouslySetInnerHTML={{__html: content}} />
       </main>
