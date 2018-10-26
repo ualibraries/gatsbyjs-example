@@ -8,3 +8,4 @@ Run `npm install`.
 
 Develop with `npm run develop` and build with `npm run build`.
 
+Deploy with `git push origin master`.
