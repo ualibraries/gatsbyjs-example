@@ -1,3 +1,3 @@
 import CMS from 'netlify-cms'
 
-import 'styles.css'
+import './styles.css'
