@@ -7,3 +7,5 @@ tags:
   - Awesome
 ---
 This is another blog post submitted by Joe.
+
+![](/img/strongarm.png)
