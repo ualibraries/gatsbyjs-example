@@ -1,8 +1,10 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 title: About
-path: /about
 ---
 
 This is the about page.
 
+This is a test.
+
+This is another tets.
